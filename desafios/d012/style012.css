@@ -16,6 +16,7 @@ header{
 header h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 7.5vw;
+    font-variant: small-caps;
 }
 
 header p{
@@ -41,7 +42,8 @@ main{
 }
 
 .normal{
-    padding: 50px 0px 100px 0px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 #joaninha{
