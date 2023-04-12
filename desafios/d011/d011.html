@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #conteiner {
+            background-color: black;
+            height: 96vh;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-image: url(espaco.jpg);
+            position: relative;
+            padding: 10px;
+        }
+        #conteudo {
+            background-image: url(astronauta.png);
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <div id="conteudo"></div>
+    </section>
+</body>
+</html>
