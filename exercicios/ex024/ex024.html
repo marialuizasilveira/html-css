@@ -1,152 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício</title>
+    <title>Document</title>
     <style>
-        table{
-            width: 500px;
-            height: 300px;
-            border-collapse: collapse;
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        caption{
-            font-weight: bold;
-            font-size: 1.5em;
+        table{
+            width: 1000px;
+            border-collapse: collapse;
         }
 
         td,th{
             border: 1px solid black;
             padding: 5px;
         }
-
-        .meio{
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .cgrupos{
-            background-color: lightblue;
-        }
-        .cfilmes{
-            background-color: azure;
-        }
-        .cnomes{
-            background-color: aquamarine;
-        }
     </style>
 </head>
 <body>
-    <h1>Exercício de Tabelas</h1>
-    <table>
-        <caption>Filmes Favoritos</caption>
-        <Thead>
-            <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
-                <th scope="colgroup" colspan="3">Filmes</th>
-            </tr>
-        </Thead>
-        <Tbody>
-            <tr>
-                <td class="meio" rowspan="3" scope="rowgroup">Mulheres</td>
-                <td>Ana Maria</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batmamn</td>
-            </tr>
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>X-man</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <td class="meio" rowspan="3" scope="rowgroup">Homens</td>
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Jogos Vorazes</td>
-                <td>Divergente</td>
-            </tr>
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-        </Tbody>
-    </table>
-    <h1>Formatação por Coluna</h1>
-    <table>
-        <colgroup>
-            <col class="cgrupos">
-            <col class="cnomes">
-            <col class="cfilmes">
-            <col class="cfilmes">
-            <col class="cfilmes">
-        </colgroup>
-        <caption>Filmes Favoritos</caption>
-        <Thead>
-            <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
-                <th scope="colgroup" colspan="3">Filmes</th>
-            </tr>
-        </Thead>
-        <Tbody>
-            <tr>
-                <td class="meio" rowspan="3" scope="rowgroup">Mulheres</td>
-                <td>Ana Maria</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batmamn</td>
-            </tr>
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>X-man</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <td class="meio" rowspan="3" scope="rowgroup">Homens</td>
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Jogos Vorazes</td>
-                <td>Divergente</td>
-            </tr>
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-        </Tbody>
-    </table>
+    <div style="overflow-x: auto;">
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </div>
 </body>
 </html>
