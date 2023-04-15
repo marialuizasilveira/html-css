@@ -1,85 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iframe</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table{
-            width: 1000px;
-            border-collapse: collapse;
-        }
-
-        td,th{
-            border: 1px solid black;
-            padding: 5px;
+        #tela{
+            width: 95vw;
+            height: 35vh;
         }
     </style>
 </head>
 <body>
-    <div style="overflow-x: auto;">
-        <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-          </tr>
-        </table>
-      </div>
+    <h1>Usando iframe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore dolore doloribus totam tempora dolores ex sed provident aut distinctio? Nisi beatae amet autem soluta ipsum exercitationem quo cumque eos esse?</p>
+    <ul>
+        <li><a target="frame" href="pagina01.html">Primeira página</a></li>
+        <li><a target="frame" href="pagina02.html">Segunda página</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe doloribus accusantium provident dolorum, quod quia nisi reprehenderit quos cum nam maiores corrupti consequatur hic excepturi. Quisquam quas placeat incidunt.</p>
+    <iframe src="paginacomeço.html" sandbox="sandbox" referrerpolicy="no-referrer" id="tela" name="frame">
+        [Desculpe, seu navegador não é compatível.]
+    </iframe>
+    <h1>Usando links</h1>
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMrmrX-r7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Google Maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76201.43270692269!2d-6.380428829506368!3d53.355879304922276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670da9f174517b%3A0xa126d82d9add596b!2sPhoenix%20Park!5e0!3m2!1spt-BR!2sie!4v1681407666714!5m2!1spt-BR!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Waze</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=53.359972&lon=-6.337724&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+    <h2>Google Documents</h2>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTrO4LofdqK2UK8MHep4V50iML4O4odUTjUUCuqbiSyujLNSALltmLoLq9OucoLJQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </body>
 </html>

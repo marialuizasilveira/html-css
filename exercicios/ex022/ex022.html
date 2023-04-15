@@ -1,172 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Exercício</title>
     <style>
         table{
-            width: 400px;
-            height: 900px;
+            width: 500px;
+            height: 300px;
             border-collapse: collapse;
-            position: relative;
         }
+
         caption{
-            background-color: rgb(180, 206, 255);
             font-weight: bold;
-            font-variant: small-caps;
-            padding: 5px;
+            font-size: 1.5em;
         }
+
         td,th{
             border: 1px solid black;
+            padding: 5px;
         }
-        .num{
-            text-align: right;
+
+        .meio{
+            text-align: center;
+            font-weight: bold;
         }
-        thead{
-            background-color: lightgray;
+
+        .cgrupos{
+            background-color: lightblue;
         }
-        Tbody> tr:nth-child(even){
-            background-color: lightgray;
+        .cfilmes{
+            background-color: azure;
         }
-        thead > tr > th{
-            position: sticky;
-            top: -1px;
-            background-color: lightgray;
+        .cnomes{
+            background-color: aquamarine;
         }
     </style>
 </head>
 <body>
-    <h1>Tabela Grande</h1>
+    <h1>Exercício de Tabelas</h1>
     <table>
-        <caption>Países e suas populações</caption>
+        <caption>Filmes Favoritos</caption>
         <Thead>
             <tr>
-                <th>Países</th>
-                <th>População</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </Thead>
         <Tbody>
             <tr>
-                <td>China</td>
-                <td class="num">1 411 780 000</td>
+                <td class="meio" rowspan="3" scope="rowgroup">Mulheres</td>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
             </tr>
             <tr>
-                <td>Índia</td>
-                <td class="num">1 326 155 000</td>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batmamn</td>
             </tr>
             <tr>
-                <td>Estados Unidos</td>
-                <td class="num">331 449 281</td>
+                <td>Cláudia Melo</td>
+                <td>X-man</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
             </tr>
             <tr>
-                <td>Indonésia</td>
-                <td class="num">273 523 615</td>
+                <td class="meio" rowspan="3" scope="rowgroup">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
             </tr>
             <tr>
-                <td>Paquistão</td>
-                <td class="num">220 892 340</td>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Jogos Vorazes</td>
+                <td>Divergente</td>
             </tr>
             <tr>
-                <td>Nigéria</td>
-                <td class="num">217 757 685	</td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td class="num">215 851 765</td>
-            </tr>
-            <tr>
-                <td>China</td>
-                <td class="num">1 411 780 000</td>
-            </tr>
-            <tr>
-                <td>Índia</td>
-                <td class="num">1 326 155 000</td>
-            </tr>
-            <tr>
-                <td>Estados Unidos</td>
-                <td class="num">331 449 281</td>
-            </tr>
-            <tr>
-                <td>Indonésia</td>
-                <td class="num">273 523 615</td>
-            </tr>
-            <tr>
-                <td>Paquistão</td>
-                <td class="num">220 892 340</td>
-            </tr>
-            <tr>
-                <td>Nigéria</td>
-                <td class="num">217 757 685	</td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td class="num">215 851 765</td>
-            </tr>
-            <tr>
-                <td>China</td>
-                <td class="num">1 411 780 000</td>
-            </tr>
-            <tr>
-                <td>Índia</td>
-                <td class="num">1 326 155 000</td>
-            </tr>
-            <tr>
-                <td>Estados Unidos</td>
-                <td class="num">331 449 281</td>
-            </tr>
-            <tr>
-                <td>Indonésia</td>
-                <td class="num">273 523 615</td>
-            </tr>
-            <tr>
-                <td>Paquistão</td>
-                <td class="num">220 892 340</td>
-            </tr>
-            <tr>
-                <td>Nigéria</td>
-                <td class="num">217 757 685	</td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td class="num">215 851 765</td>
-            </tr>
-            <tr>
-                <td>China</td>
-                <td class="num">1 411 780 000</td>
-            </tr>
-            <tr>
-                <td>Índia</td>
-                <td class="num">1 326 155 000</td>
-            </tr>
-            <tr>
-                <td>Estados Unidos</td>
-                <td class="num">331 449 281</td>
-            </tr>
-            <tr>
-                <td>Indonésia</td>
-                <td class="num">273 523 615</td>
-            </tr>
-            <tr>
-                <td>Paquistão</td>
-                <td class="num">220 892 340</td>
-            </tr>
-            <tr>
-                <td>Nigéria</td>
-                <td class="num">217 757 685	</td>
-            </tr>
-            <tr>
-                <td>Brasil</td>
-                <td class="num">215 851 765</td>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
             </tr>
         </Tbody>
-        <Tfoot>
+    </table>
+    <h1>Formatação por Coluna</h1>
+    <table>
+        <colgroup>
+            <col class="cgrupos">
+            <col class="cnomes">
+            <col class="cfilmes">
+            <col class="cfilmes">
+            <col class="cfilmes">
+        </colgroup>
+        <caption>Filmes Favoritos</caption>
+        <Thead>
             <tr>
-                <td>Total</td>
-                <td>Milhões</td>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
-        </Tfoot>
+        </Thead>
+        <Tbody>
+            <tr>
+                <td class="meio" rowspan="3" scope="rowgroup">Mulheres</td>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batmamn</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>X-man</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td class="meio" rowspan="3" scope="rowgroup">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Jogos Vorazes</td>
+                <td>Divergente</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </Tbody>
     </table>
 </body>
 </html>
