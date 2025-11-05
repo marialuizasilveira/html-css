@@ -15,19 +15,32 @@
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: auto;
+        }
+
+        #item1 {
+            flex-basis: 250px;
+            flex-grow: 0;
+            flex-shrink: 2;
+        }
+
+        #item2 {
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        #item3 {
+            flex-basis: 250px;
+            flex-grow: 4;
+            flex-shrink: 6;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">Grande</div>
-        <div class="item">C</div>
-        <div class="item">Extra Grande</div>
-        <div class="item">E</div>
-        <div class="item">Extra Extra Grande</div>
-        <div class="item">G</div>
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
     </div>
 </body>
 </html>
